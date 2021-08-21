@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyAahI7OB7HMv42fX58WuQEgNjUdi5xG9mU",
+            authDomain: "todo-counter-app.firebaseapp.com",
+            databaseURL: "https://todo-counter-app-default-rtdb.firebaseio.com",
+            projectId: "todo-counter-app",
+            storageBucket: "todo-counter-app.appspot.com",
+            messagingSenderId: "437506191031",
+            appId: "1:437506191031:web:d870ce1d333d783d352732",
+            measurementId: "G-BRXC3DX0JM"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light">
+        <div class="container-fluid" id="nav">
+            <a class="navbar-brand">ThingsTODO</a>
+            <button class="btn btn-outline-success" id="loginbtn" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Login</button>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"
+                        style="margin-left: auto; font-family: 'Abril Fatface', cursive; letter-spacing: 1px; font-size: 20px;">
+                        Login
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-2">
+                        <label for="exampleInputEmail1" class="form-label" style="font-size: 17px;">Email
+                            address:</label>
+                        <input type="email" id="email2" class="form-control" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <div id="one" style="color: red;"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label" style="font-size: 17px;">Password:</label>
+                        <input type="password" id="password2" class="form-control" required>
+                        <div id="two" style="color: red;"></div>
+                    </div>
+                    <button
+                        style="padding: 0; border: none; color: rgb(0, 126, 204); background-color: white; text-decoration: underline;"
+                        onclick="signupPage()">Sign
+                        Up?</button>
+                    <button
+                        style="float: right; padding: 0; border: none; color: rgb(0, 126, 204); background-color: white; text-decoration: underline;"
+                        onclick="admin()">Admin?</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="close" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" onclick="login()" class="btn btn-outline-success">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="contParent">
+        <div id="content">
+            <p>Now no need to save the work which you needs to be done in future in your brain
+                <strong>"ThingsTODO"</strong> is providing you a platform to save your todos in it and whenever your
+                work is done delete it or you can also edit your work. Hurry up, Login and start saving your Todos in
+                <strong>"ThingsTODO"</strong>.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+#nav a{
+    font-family: 'Kalam', cursive;
+    color: rgb(250, 250, 98);
+}
+#nav2{
+    display: block;
+    text-align: center;
+} 
+#nav2 a{
+    color: rgb(250, 250, 98);
+    font-weight: bold;
+    text-shadow: 3px 3px 4px chartreuse;
+}
+#nav2 button{
+    float: right;
+    background-color: wheat;
+    color: black;
+}
+#loginbtn{
+    background-color: wheat;
+    color: black;
+}
+.navbar{
+    background-color: red;
+}
+#content strong{
+    font-family: 'Kalam', cursive;
+}
+#content{
+    display: flex;
+    justify-content: center;
+    margin: 10% auto;
+}
+#content p{
+    color: red;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    width: 300px;
+    text-align: justify;
+}
+#contParent{
+    background-image: url("https://us.123rf.com/450wm/maxborovkov/maxborovkov1509/maxborovkov150900080/44827191-lines-perspective-background-vector-illustration-.jpg?ver=6");
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#quizbtn{
+    text-align: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+#quizbtn button{
+    margin: 10px;
+}
